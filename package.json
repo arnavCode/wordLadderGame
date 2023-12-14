@@ -1,0 +1,15 @@
+{
+  "name": "word-ladder-game",
+  "version": "1.0.0",
+  "description": "Word Ladder Game and Solver",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arnav Nyaupane",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.1.2"
+  }
+}

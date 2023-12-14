@@ -1,0 +1,102 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Arnav's Word Ladder Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- You can also require other files to run in this process -->
+    <div class="app-container">
+        <div class="game-container">
+            <div class="gameHeader">
+                <div class="gameHeaderLeftGroup">
+                    <button class="iconButton"></button>
+                    <button class="iconButton"></button>
+                </div>
+                <div class="gameTitle">Arnav's Word Ladder</div>
+                <div class="gameHeaderRightGroup">
+                    <button class="iconButton"></button>
+                    <button class="iconButton"></button>
+                </div>
+            </div>
+            <div class="game">
+                <div class="gameBoard">
+                    <div class="startWordRowContainer">
+                        <div class="row startWordRow">
+                            <div class="block startWordBlock">b</div>
+                            <div class="block startWordBlock">r</div>
+                            <div class="block startWordBlock">a</div>
+                            <div class="block startWordBlock">i</div>
+                            <div class="block startWordBlock">n</div>
+                        </div>
+                    </div>
+                    <div class="inputRowsContainer">
+                        <div class="row">
+                            <div class="inputBlock currentBlock"></div>
+                            <div class="inputBlock"></div>
+                            <div class="inputBlock"></div>
+                            <div class="inputBlock"></div>
+                            <div class="inputBlock"></div>
+                        </div>
+                        <div class="inputRowsEndElement"></div>
+                    </div>
+                    <div class="endWordRowContainer">
+                        <div class="row endWordRow">
+                            <div class="block endWordBlock">r</div>
+                            <div class="block endWordBlock">a</div>
+                            <div class="block endWordBlock">i</div>
+                            <div class="block endWordBlock">n</div>
+                            <div class="block endWordBlock">s</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="keyboard">
+                    <div class="keyboardRow">
+                        <div class="button characterButton">q</div>
+                        <div class="button characterButton">w</div>
+                        <div class="button characterButton">e</div>
+                        <div class="button characterButton">r</div>
+                        <div class="button characterButton">t</div>
+                        <div class="button characterButton">y</div>
+                        <div class="button characterButton">u</div>
+                        <div class="button characterButton">i</div>
+                        <div class="button characterButton">o</div>
+                        <div class="button characterButton">p</div>
+                    </div>
+                    <div class="keyboardRow">
+                        <div class="keyboardSpacer"></div>
+                        <div class="button characterButton">a</div>
+                        <div class="button characterButton">s</div>
+                        <div class="button characterButton">d</div>
+                        <div class="button characterButton">f</div>
+                        <div class="button characterButton">g</div>
+                        <div class="button characterButton">h</div>
+                        <div class="button characterButton">j</div>
+                        <div class="button characterButton">k</div>
+                        <div class="button characterButton">l</div>
+                        <div class="keyboardSpacer"></div>
+                    </div>
+                    <div class="keyboardRow">
+                        <button class="button enterButton">Enter</button>
+                        <div class="button characterButton">z</div>
+                        <div class="button characterButton">x</div>
+                        <div class="button characterButton">c</div>
+                        <div class="button characterButton">v</div>
+                        <div class="button characterButton">b</div>
+                        <div class="button characterButton">n</div>
+                        <div class="button characterButton">m</div>
+                        <button class="button deleteButton">Delete</button>
+                    </div>
+                </div>
+                <div class="toast aboveKeyboardToast" id="error-toast"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./wordladder.js"></script>
+</body>
+</html>
